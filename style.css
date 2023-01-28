@@ -2,6 +2,7 @@ html,body{
     margin: 0;
     height: 100%;
 }
+
 nav{
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -9,6 +10,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .logo{
     display: flex;
@@ -171,9 +173,100 @@ nav{
 }
 
 
+.accion{
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(255, 255, 255);
+}
+.accion .div{
+    margin-top: 50px;
+    padding-left: 20px;
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 
+}
 
+.accion .div p{
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.accion h1{
+    width: 105%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+.accion .div .listas{
+    width: 100%;
+    height: 55%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: -50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.accion .div #cuadro{
+    width: 100%;
+    height: 90%;
+    border-top: solid rgb(255, 143, 115)32px;
+    border-bottom: solid #d4d4d4 1px;
+    border-right: solid #d4d4d4 1px;
+    border-left: solid #d4d4d4 1px;
+    background-color: #ffffff;
+    border-radius: 9px;
+}
+.gestion .sobre{
+    border: solid 5px white;
+    width: 15%;
+    height: 15%;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+}
+.gestion{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.sobre img{
+    width: 100%;
+    height: 100%;
+}
+.listas .gestion h1{
+    width: 100%;
+    font-size: 20px;
+    margin: 50px 0 0 15px;
+}
+.listas .gestion p{
+    text-transform: capitalize;
+    margin: 15px;
+    width: 90%;
+    word-spacing: 3px;
+    line-height: 1.5;
+}
+
+.lluvia{
+    display: none;
+}
+.reunion{
+    display: none;
+}
+
+.tareas{
+    display: none;
+}
 
 
 
@@ -191,7 +284,7 @@ nav{
         padding-top: 50px;
     }
     .inifica h1{
-        margin-top: 30px;
+        margin-top: 100px;
         width:70% ;
     }
     .inifica .inp{
@@ -216,8 +309,7 @@ nav{
         margin-left: 10px;
     }
     .degradado .img{
-        padding-top: 100px;
-        height: 40%;
+        height: 70%;
     }
     .degradado .img img{
         width: 90%;
@@ -247,6 +339,11 @@ nav{
         width: 90%;
         height: 100%;
     }
+
+    .cartas{
+        padding-top: 30px;
+
+    }
     .guia .cards{
         border-left: solid 10px #0065ff;
         width: 88%;
@@ -260,7 +357,12 @@ nav{
 }
 
 @media (min-width:1024px){
-   
+    nav{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
     .burger{
         display: none;
     }
@@ -268,7 +370,7 @@ nav{
     .menu{
         display: block;
         display: flex;
-        width: 70%;
+        width: 60%;
         height: 100%;
         justify-content: space-evenly;
         align-items: center;
@@ -288,7 +390,7 @@ nav{
 
     .extra{
         display: block;
-        width: 30%;
+        width: 40%;
         height: 100%;
         display: flex;
         align-items: center;
@@ -370,7 +472,7 @@ nav{
     }
 
     .abc{
-        height: 150vh;
+        height: 125vh;
         width: 100%;
 
     }
@@ -378,11 +480,17 @@ nav{
     .abc .board{
         display: flex;
         flex-direction: row-reverse;
-        height: 100%;
+        align-items: flex-start;
+        justify-content: center;
+        height: 70%;
     }
     .abc .guia{
         width: 100%;
         height: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .abc .guia .hola{
         width: 90%;
@@ -396,7 +504,7 @@ nav{
 
     .board .cards{
         width: 100%;
-        height: 30%;
+        height: 40%;
         background-color:transparent;
         border: none;
     }
@@ -404,19 +512,23 @@ nav{
         font-size: 16px;
     }
     .board .cards:hover{
-        background-color: white;
         border: solid 1px rgb(255, 255, 255);
         border-left: solid 10px #0065ff;
         border-radius: 9px;
     }
 
+   
+
 
 
 
     .board>div{
-        width: 70%;
-        height: 50%;
         margin-left: 50px;
+    }
+
+    .board>div>img{
+        margin-top: 60px;
+        height: 70%;
     }
     .board div img{
         width: 90%;
@@ -439,18 +551,19 @@ nav{
 @media (min-width:1440px){
     nav{
         background-color: rgb(255, 255, 255);
-        width: 60%;
+        width: 100%;
         height: 6vh;
         display: flex;
-        margin-left: 45vh;
         align-items: center;
     }
     .logo{
-        width: 100%;
-        margin: 0;
+        width: 90%;
+        margin-left: 100px;
+        display: flex;
+        justify-content: center;
     }
     .extra{
-        width: 50%;
+        width: 70%;
     }
     
     .menu{
@@ -466,7 +579,7 @@ nav{
         margin-left: 10px;
     }
     .extra .inisiar{
-        width: 70%;
+        width: 35%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -474,14 +587,16 @@ nav{
     .extra .obtener{
         background-color: rgb(0, 101, 255);
         color: white;
-        width: 60%;
+        width: 50%;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        font-size: 20px;
     }
     .degradado{
-        height: 60vh;
+        width: 100%;
+        height: 75vh;
         display: flex;
         justify-content: center;
     }
@@ -490,8 +605,9 @@ nav{
         margin-top: 100px;
     }
     .degradado .img{
-        width: 30%;
-        margin-top: 70px;
+        width: 50%;
+        height: 110%;
+
     }
     .btn{
         flex-direction: row;
@@ -508,12 +624,11 @@ nav{
 
 
     .abc{
-        height: 85vh;
+        height: 130vh;
         width: 100%;
     }
     .abc .guia{
         width: 100%;
-        margin-left: 400px;
         margin-right: 200px;
     }
     .abc .hola h1{
@@ -524,12 +639,12 @@ nav{
         font-size: 24px;
     }
     .board>div{
-        margin-left: 0px;
+
         height: 100%;
     }
     .board div img{
-        width: 70%;
-        height: 90%;
+        width: 100%;
+        height: 70%;
     }
 
     .abc .board{
@@ -541,6 +656,13 @@ nav{
     }
     .board .cards{
         width: 65%;
-        height: 30%;
+        height: 27%;
+    }
+    .board .cards:hover{
+        background-color: white;
+        border: solid 1px rgb(255, 255, 255);
+        border-left: solid 10px #0065ff;
+        border-radius: 9px;
     }
 }
+
